@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity implements NoteAdapter.ItemC
     RecyclerView rvNote;
     ImageView imgDelete;
     EditText updateNote;
-
+    EditText updateTitle;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -117,6 +117,7 @@ public class MainActivity extends AppCompatActivity implements NoteAdapter.ItemC
         builder.setPositiveButton(
                 "Update",
                 new DialogInterface.OnClickListener() {
+                    @SuppressLint("MissingInflatedId")
                     public void onClick(DialogInterface dialog, int id) {
                         updateNote = customLayout.findViewById(R.id.updateNote);
 
